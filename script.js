@@ -19,12 +19,13 @@ btnRoll.addEventListener('click', function () {
   // 1. Generating a random dice roll.
   const dice = Math.trunc(Math.random() * 6) + 1;
   // 2. Display the dice.
-  //diceEl.classList.remove('hidden');
-  //diceEl.src = `dice-${dice}.png`;
+  diceEl.classList.remove('hidden');
+  diceEl.src = `dice-${dice}.png`;
   // 3. Check for a roll 1: If true switch to next player.
-  /*if (dice !== 1) {
+  if (dice !== 1) {
     // Add the roll value to the current score.
     currentScore += dice;
   } else {
-  }*/
+    currentScore = 0;
+  }
 });
