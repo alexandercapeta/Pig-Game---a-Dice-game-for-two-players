@@ -2,7 +2,7 @@
 
 const score0El = document.querySelector('#score--0');
 const score1El = document.getElementById('score--1');
-const current0 = document.getElementById('current--0');
+const current0El = document.getElementById('current--0');
 const current1El = document.getElementById('current--1');
 
 const diceEl = document.querySelector('.dice');
@@ -30,6 +30,6 @@ btnRoll.addEventListener('click', function () {
     currentScore += dice;
     current0El.textContent = currentScore;
   } else {
-    currentScore = 0;
+    // Switch player
   }
 });
