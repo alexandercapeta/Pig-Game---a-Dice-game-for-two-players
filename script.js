@@ -48,4 +48,10 @@ btnRoll.addEventListener('click', function () {
   }
 });
 
-btnHold.addEventListener('click', function () {});
+btnHold.addEventListener('click', function () {
+  // 1. Add curent score to the score of the active player.
+  score[activePlayer] += currentScore;
+  // 2. Check if score is >= 100;
+  // Finish the game.
+  // Switch to the next playerS
+});
