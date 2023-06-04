@@ -36,6 +36,9 @@ btnRoll.addEventListener('click', function () {
     current0El.textContent = currentScore;
   } else {
     // Switch player
+    currentScore = 0;
+    document.getElementById(`current--${activePlayer}`).textContent =
+      currentScore;
     activePlayer = activePlayer === 0 ? 1 : 0;
   }
 });
