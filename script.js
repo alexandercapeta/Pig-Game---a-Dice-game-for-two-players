@@ -89,4 +89,12 @@ btnNew.addEventListener('click', function () {
   document.getElementById('score--1').textContent = scores[1];
   document.getElementById('current--0').textContent = currentScore;
   document.getElementById('current--1').textContent = currentScore;
+
+  // Changing the active player to player 1.
+  if (activePlayer == 1) {
+    player0El.classList.toggle('player--active');
+    player1El.classList.toggle('player--active');
+    player1El.classList.remove('player--winner');
+  }
+  activePlayer = 0;
 });
