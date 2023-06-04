@@ -56,6 +56,7 @@ btnRoll.addEventListener('click', function () {
 });
 
 btnHold.addEventListener('click', function () {
+  // Test if the game is still in play.
   if (playing) {
     // 1. Add curent score to the score of the active player.
     scores[activePlayer] += currentScore;
@@ -77,3 +78,5 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
+
+btnNew.addEventListener('click', function () {});
