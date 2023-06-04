@@ -90,11 +90,14 @@ btnNew.addEventListener('click', function () {
   document.getElementById('current--0').textContent = currentScore;
   document.getElementById('current--1').textContent = currentScore;
 
+  // Removing the winner class
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
+
   // Changing the active player to player 1.
   if (activePlayer == 1) {
     player0El.classList.toggle('player--active');
     player1El.classList.toggle('player--active');
-    player1El.classList.remove('player--winner');
   }
   activePlayer = 0;
 });
